@@ -1,0 +1,5 @@
+#!/usr/bin/expect
+spawn nexus-network start --node-id 6560465 --max-threads 8
+sleep 1800
+send "q\r"
+expect eof
